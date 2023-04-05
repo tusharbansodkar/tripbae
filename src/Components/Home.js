@@ -24,6 +24,7 @@ class Home extends React.Component {
   render() {
     const customStyles = {
       content: {
+        width: "70vw",
         top: "50%",
         left: "50%",
         right: "auto",
@@ -468,9 +469,64 @@ class Home extends React.Component {
                   contentLabel="Example Modal"
                   style={customStyles}
                 >
-                  <h2>Modal Title</h2>
-                  <p>Modal content goes here.</p>
-                  <button onClick={this.handleCloseModal}>Close Modal</button>
+                  <h2>Select Package Options</h2>
+                  <div
+                    style={{
+                      border: "1px solid gray",
+                      padding: "10px",
+                      margin: "25px 0px",
+                      display: "flex",
+                      justifyContent: "space-between",
+                      lineHeight: 2,
+                    }}
+                  >
+                    <div>
+                      <h3>Trip to Gokarna Beach without Transportation</h3>
+                      <i className="bi bi-clock"></i>
+                      <span>3 days, 2 nights</span>
+                      <h5 style={{ color: "red" }}>Show Details</h5>
+                    </div>
+
+                    <div>
+                      <h6>
+                        <s style={{ color: "gray" }}>INR 4,599</s>
+                      </h6>
+                      <h3 style={{ color: "red" }}>INR 2,625</h3>
+                      <h6 style={{ color: "gray" }}>Per Adult</h6>
+                    </div>
+                  </div>
+
+                  <div
+                    style={{
+                      border: "1px solid gray",
+                      padding: "10px",
+                      margin: "25px 0px",
+                      display: "flex",
+                      justifyContent: "space-between",
+                      lineHeight: 2,
+                    }}
+                  >
+                    <div>
+                      <h3>Trip to Gokarna Beach with Transportation</h3>
+                      <i className="bi bi-clock"></i>
+                      <span>3 days, 2 nights</span>
+                      <h5 style={{ color: "red" }}>Show Details</h5>
+                    </div>
+
+                    <div>
+                      <h6>
+                        <s style={{ color: "gray" }}>INR 4,599</s>
+                      </h6>
+                      <h3 style={{ color: "red" }}>INR 1,750</h3>
+                      <h6 style={{ color: "gray" }}>Per Adult</h6>
+                    </div>
+                  </div>
+                  <button
+                    onClick={this.handleCloseModal}
+                    className="btn-order model-btn"
+                  >
+                    Close Modal
+                  </button>
                 </Modal>
               </form>
             </div>
